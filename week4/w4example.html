@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 4</title>
 </head>
+
 <body>
     <h1>Week 4: HTML Table</h1>
+    <table border="2">
+        <caption>Student List (IFT1206)</caption>
+        <colgroup>
+            <col style="background-color: aquamarine;"/>
+            <col style="background-color: yellow;"/>
+        </colgroup>
+        <thead style="background-color: yellow;">
+            <tr>
+                <th>NO</th>
+                <th>Name</th>
+                <th>PROGRAM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>Sam</td>
+                <td rowspan="2">IT</td>
+            </tr>
+            <tr>
+                
+                <td>Tom</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mia</td>
+                <td>Programming</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Prepared by:</td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
 </body>
+
 </html>
