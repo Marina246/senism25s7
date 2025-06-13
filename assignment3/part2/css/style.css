@@ -13,11 +13,12 @@ html {
 /* Your CSS below here */
 
 div{
-    /* A reasonable width for a large box, say around 200 pixels.*/
+    margin: 0 auto;
+    height: 100px; width: 200px; 
     border: 20px solid black;
-    width: 200px;
-    /*A reasonable height for a large box, centering the text vertically in the process.*/
-    height: 100px;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
 }
