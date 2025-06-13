@@ -68,3 +68,6 @@ ul{
 /*
 Make the links green on hover.
 */
+a:hover{
+  color: green;
+}
