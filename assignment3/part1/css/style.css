@@ -34,3 +34,11 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
+
+/*
+Make the level one heading pink, using the CSS color keyword hotpink.
+*/
+
+h1{
+  color: hotpink;
+}
