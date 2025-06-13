@@ -1,0 +1,13 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+
+/*
+A reasonable width for a large box, say around 200 pixels.
+*/
+
+div{
+    border-width: 200px;
+}
