@@ -1,13 +1,23 @@
+/*
+Name: Marina Senis
+Student Number: 100774596
+File: style.css
+Date: June 13th, 2025
+Assignment 3 part 2 css file
+*/
+
 html {
   font-family: sans-serif;
 }
 
 /* Your CSS below here */
 
-/*
-A reasonable width for a large box, say around 200 pixels.
-*/
-
 div{
-    border-width: 200px;
+    /* A reasonable width for a large box, say around 200 pixels.*/
+    border: 20px solid black;
+    width: 200px;
+    /*A reasonable height for a large box, centering the text vertically in the process.*/
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
 }
