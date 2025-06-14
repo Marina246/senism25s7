@@ -38,4 +38,23 @@ div{
     */
     border-radius: 10px;
     border: 1px solid darkred;
+
+    /*  A linear semi-transparent black gradient that goes toward the bottom right corner. Make it completely transparent at the start, grading to around 0.2 opacity by 30% along, and remaining at the same color until the end. 
+        Multiple box shadows. Give it one standard box shadow to make the box look slightly raised off the page. The other two should be inset box shadows — a semi-transparent white shadow near the top left and a semi-transparent black shadow near the bottom right — to add to the nice raised 3D look of the box.
+    */
+    background-image: linear-gradient(to bottom right,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.2) 30%,
+    rgba(0,0,0,0.2) 100%);
+
+    box-shadow:
+    /* Main box-shadow */
+    0 2px 4px rgba(0, 0, 0, 0.5),
+    
+    /* Inset white box-shadow at top left */
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    
+    /* Inset black box-shadow at bottom right */
+    inset -2px -2px 4px rgba(0, 0, 0, 0.5);
+    
 }
