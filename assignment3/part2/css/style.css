@@ -17,11 +17,10 @@ div{
         A reasonable height for a large box, centering the text vertically in the process.
         Center the box horizontally.
         Center the text within the box.
-        A slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.*/
-
+        A slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.
+    */
     margin: 0 auto;
-    height: 100px; width: 200px; 
-    /*border: 20px solid black;*/
+    height: 100px; width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,4 +33,9 @@ div{
     color: white;
     text-shadow: 2px 2px 4px black;
 
+    /*  A fairly subtle border radius
+        A 1-pixel solid border with a color similar to the base color, but a slightly darker shade.
+    */
+    border-radius: 10px;
+    border: 1px solid darkred;
 }
