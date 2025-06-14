@@ -13,12 +13,25 @@ html {
 /* Your CSS below here */
 
 div{
+    /*  A reasonable width for a large box, say around 200 pixels.
+        A reasonable height for a large box, centering the text vertically in the process.
+        Center the box horizontally.
+        Center the text within the box.
+        A slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.*/
+
     margin: 0 auto;
     height: 100px; width: 200px; 
-    border: 20px solid black;
+    /*border: 20px solid black;*/
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 1.5rem;
+
+    /*  A base color for the design. Give the box this color as its background color.
+        A contrasting color for the text and a black text shadow.    
+    */
+    background-color: red;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+
 }
