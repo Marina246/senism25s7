@@ -83,3 +83,20 @@ body {
     padding-right: 10px;
     padding-bottom: 10px;
   }
+
+  /*The <article> and <aside> elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.*/
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    flex: 1 1 200px;
+    
+  }
+
+  aside ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
