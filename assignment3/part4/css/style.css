@@ -60,7 +60,6 @@ body {
 
 
 /*To display the navigation items in a row, with an equal amount of space between the items.*/
-
   nav ul {
     display: flex;
     flex-direction: row;
@@ -70,14 +69,12 @@ body {
   }
 
 /*The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it.*/
-
   nav {
     position: sticky;
     top: 0px;
   }
 
   /*The image that is inside the article should have text wrapped around it.*/
-
   main article img {
     float: left;
     padding-right: 10px;
@@ -92,11 +89,11 @@ body {
 
   aside {
     flex: 1 1 200px;
-    
   }
 
+  /*The photographs should display as a two column grid with a 1 pixel gap between the images.*/
   aside ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    gap: 1px;
   }
