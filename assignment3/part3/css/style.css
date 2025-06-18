@@ -51,3 +51,20 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+@font-face {
+    font-family: Roboto_Serif;
+    src: url(../fonts/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    font-family: Roboto_Serif;
+}
+
+h1, h2 {
+    font-family: Roboto;
+}
