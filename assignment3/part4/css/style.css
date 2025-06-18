@@ -75,3 +75,11 @@ body {
     position: sticky;
     top: 0px;
   }
+
+  /*The image that is inside the article should have text wrapped around it.*/
+
+  main article img {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
