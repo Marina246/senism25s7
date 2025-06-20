@@ -167,4 +167,19 @@ li {
     list-style-type: square;
 }
 
+/*Style your navigation menu so that it harmonizes with the page.*/
 
+nav li{
+    list-style-type: none;
+    display: block;
+    border: solid, 2.4px #a66;
+    padding: 1em 2em;
+    margin-bottom: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: medium;
+    display: block;
+    text-align: center;
+}
