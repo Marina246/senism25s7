@@ -110,6 +110,10 @@ section > h2 + p {
 
 /*
 Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.
+Make it so that links are underlined by default, but when you hover or focus them the underline disappears.
+Remove the default focus outline from ALL the links on the page.
+Give the active state a noticeably different styling so it stands out nicely, but make it still fit in with the overall page design.
+Make it so that external links have the external link icon inserted next to them.
 */
 
 a:link {
@@ -118,12 +122,32 @@ a:link {
 
 a:visited {
     color: rgb(112, 57, 57);
+    text-decoration: underline;
 }
 
 a:hover {
     color: rgb(240, 168, 168);
+    text-decoration: none;
 }
 
 a:focus {
     color: rgb(215, 62, 62);
+    outline: none;
+}
+
+a:active {
+    color: rgb(242, 218, 166);
+    background-color: #a66;
+    border-radius: 2px;
+}
+
+/* Made a identifier called icon and attached it to all anchor tags in p3.html who need to use the icon after the external link*/
+#icon::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 2.4px;
+    background-image: url("../images/external-link-52.png"); /* path to your icon */
+    background-size: contain;
 }
