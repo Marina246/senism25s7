@@ -51,6 +51,13 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+/*
+First of all, download a couple of free-to-use fonts. Because this is a college, the fonts should be chosen to give the page a fairly serious, formal, trustworthy feel: a serif site-wide font for the general body text, coupled with a sans-serif or slab serif for the headings might be nice.
+Use a suitable service to generate bulletproof @font-face code for these two fonts.
+Apply your body font to the whole page, and your heading font to your headings.
+*/
+
 @font-face {
     font-family: Roboto_Serif;
     src: url(../fonts/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
@@ -67,4 +74,36 @@ body {
 
 h1, h2 {
     font-family: Roboto;
+}
+
+/*
+Give the page a site-wide font-size of 10px.
+Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
+Give your body text a suitable line-height.
+Center your top level heading on the page.
+Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
+Give your body text some letter-spacing and word-spacing, as appropriate.
+Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px.
+*/
+
+body {
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2em;
+    letter-spacing: 1.4px;
+}
+
+section > h2 + p {
+    text-indent: 20px;
 }
