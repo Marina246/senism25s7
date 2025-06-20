@@ -88,7 +88,7 @@ Give the first paragraph after each heading in the <section> a little bit of tex
 
 body {
     font-size: 10px;
-    line-height: 1.6;
+    line-height: 1.4;
     letter-spacing: 0.4px;
     word-spacing: 1px;
 }
@@ -151,3 +151,20 @@ a:active {
     background-image: url("../images/external-link-52.png"); /* path to your icon */
     background-size: contain;
 }
+
+/*
+Make sure the spacing of your lists and list items works well with the styling of the overall page. Each list item should have the same line-height as a paragraph line, and each list should have the same spacing at its top and bottom as you have between paragraphs.
+Give your list items a nice bullet appropriate for the design of the page. It is up to you whether you choose a custom bullet image or something else.
+*/
+
+ul, ol {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+li {
+    line-height: 1.4;
+    list-style-type: square;
+}
+
+
