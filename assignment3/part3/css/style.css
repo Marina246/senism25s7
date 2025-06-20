@@ -107,3 +107,23 @@ h2 {
 section > h2 + p {
     text-indent: 20px;
 }
+
+/*
+Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.
+*/
+
+a:link {
+    color: #a66;
+}
+
+a:visited {
+    color: rgb(112, 57, 57);
+}
+
+a:hover {
+    color: rgb(240, 168, 168);
+}
+
+a:focus {
+    color: rgb(215, 62, 62);
+}
