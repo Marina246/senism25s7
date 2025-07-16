@@ -35,14 +35,13 @@ function result() {
     let yItem = randomValueFromArray(insertY);
     let zItem = randomValueFromArray(insertZ);
 
-    newStory = newStory.replace(":insertx:", xItem);
-    newStory = newStory.replace(":insertx:", xItem); // because there are 2 :insertx:
-    newStory = newStory.replace(":inserty:", yItem);
-    newStory = newStory.replace(":insertz:", zItem);
+    newStory = newStory.replaceAll(":insertx:", xItem);
+    newStory = newStory.replaceAll(":inserty:", yItem);
+    newStory = newStory.replaceAll(":insertz:", zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
+    newStory = newStory.replaceAll('Bob', name);
 
   }
 
@@ -52,8 +51,8 @@ function result() {
     // Fahrenheit to Celsius
     const temperature = Math.round((94 - 32) * 5 / 9) + ' centigrade';
 
-    newStory = newStory.replace('300 pounds', weight);
-    newStory = newStory.replace('94 fahrenheit', temperature);
+    newStory = newStory.replaceAll('300 pounds', weight);
+    newStory = newStory.replaceAll('94 fahrenheit', temperature);
 }
 
   story.textContent = newStory;
