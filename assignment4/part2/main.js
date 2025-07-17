@@ -42,4 +42,20 @@ for (const image of fileNames) {
 }
 
 /* Wiring up the Darken/Lighten button */
+// event listener for the button being clicked 
+btn.addEventListener('click', () => {
+    const btnClass = btn.getAttribute('class');
 
+    // if the btnClass is dark, change name of button to lighten and overlay darker background colour
+    if (btnClass === 'dark') {
+        btn.setAttribute('class','light');
+        btn.textContent = 'Lighten';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+    } 
+    // else the btnClass is anything else (light), change name of button to darken and overlay normal background colour (undarken)
+    else {
+        btn.setAttribute('class','dark');
+        btn.textContent = 'Darken';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+    }
+});
