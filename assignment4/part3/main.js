@@ -66,6 +66,21 @@ class Ball {
     this.x += this.velX;
     this.y += this.velY;
   }
+
+  // adding collision dectection method: allows us to know when balls in the array bump into each other to change the colour (detects when they colide)
+  collisionDetect() {
+    for (const ball of balls) {
+      if (this !== ball) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+          ball.color = this.color = randomRGB();
+        }
+      }
+    }
+  }
 }
 
 // Animating the ball:
@@ -98,6 +113,7 @@ function loop() {
   for (const ball of balls) {
     ball.draw();
     ball.update();
+    ball.collisionDetect(); // adds collision detection which changes ball colours
   }
 
   requestAnimationFrame(loop);
