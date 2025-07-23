@@ -45,6 +45,7 @@ class Ball {
     ctx.fill();
   }
 
+  // Crating the update method: updating the position of the ball
   update() {
     if (this.x + this.size >= width) {
       this.velX = -this.velX;
@@ -67,8 +68,12 @@ class Ball {
   }
 }
 
+// Animating the ball:
+
+// create an array to store all the balls
 const balls = [];
 
+// while the length of the array is less than 25...
 while (balls.length < 25) {
   const size = random(10, 20);
   const ball = new Ball(
@@ -84,3 +89,19 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
+
+// Creating function for looping which will give our ball effectivly motion blur and use the draw() and update() methods for the balls in the array of balls[]
+function loop() {
+  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillRect(0, 0, width, height);
+
+  for (const ball of balls) {
+    ball.draw();
+    ball.update();
+  }
+
+  requestAnimationFrame(loop);
+}
+
+// call the loop
+loop();
