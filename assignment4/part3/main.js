@@ -1,3 +1,11 @@
+/*
+Name: Marina Senis
+Student Number: 100774596
+File: main.js
+Date: July 23rd, 2025
+Assignment 4 part 3 js file: most of the assignment work is here for creating the bouncing ball demo
+*/
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
