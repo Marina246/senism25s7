@@ -125,6 +125,41 @@ class EvilCircle extends Shape
         }
         });
     }
+
+    // creating the draw method
+    draw() 
+    {
+        ctx.beginPath();
+        ctx.strokeStyle = this.color; // change fillstyle to strokestyle
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+        ctx.stroke(); // change fill to stroke
+        ctx.lineWidth = 3; // making the line width 3
+    }
+
+    checkBounds() 
+    {
+    if ((this.x + this.size) >= width) 
+        {
+            this.x -= this.size;
+        }
+
+    if ((this.x - this.size) <= 0) 
+        {
+            this.x += this.size;
+        }
+
+    if ((this.y + this.size) >= height) 
+        {
+            this.y -= this.size;
+        }
+
+    if ((this.y - this.size) <= 0) 
+        {
+            this.y += this.size;
+        }
+
+        // last 2 lines removed since we don't want to reset the placement of the evilball
+    }
 }
 
 const balls = [];
