@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function validate(){
+
+            let fname = document.querySelector('#fname').value.trim();
+
+            if(fname.length==0){
+                //alert("You Must provide value for the first name");
+                document.querySelector('#fname-error').textContent="You Must provide value for the first name"
+                return false;
+            }
+            else if(fname.length<5){
+                document.querySelector('#fname-error').textContent="First name must be at least five character"
+                return false;
+            }
+            else  {
+                fname = fname.toLowerCase();
+                for(let i=0;i<fname.length;i++){
+                    if(fname[i]<'a' || fname[i]>'z'){
+                        document.querySelector('#fname-error').textContent="All character in First Name must be alphabet"
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+    </script>
+    <title>Week 12</title>
+</head>
+<body>
+    <h1>Week 12: Introduction to Forms</h1>
+    <form action="https://httpbin.org/get" method="get" onsubmit="return validate()">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" title="Enter First Name" required>
+                <span id="fname-error" style="color: red;"></span>
+            </div>
+
+            <div>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" size="15" placeholder="First Name">
+            </div>    
+        </fieldset>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass">
+        </div>
+
+        <div>
+            <label for="assignment">Upload your assignment</label>
+            <input type="file" id="assignment">
+        </div>
+        <div>
+            <p>what are your hobbies and interests</p>
+            <input type="checkbox" id="interests1" name="interest" value="sports"><label for="interests1">Sports</label>
+            <input type="checkbox" id="interests2" name="interest" value="musics"><label for="interests1">Musics</label>
+        </div>
+        <div>
+            <p>Which OS do you prefer</p>
+            <input type="radio" name="os" id="os1" value="windows" checked><label for="os1">Windows</label>
+            <input type="radio" name="os" id="os2" value="os2"><label for="os2">OS2</label>
+        </div>
+
+        <div>
+            <label for="course"> What is your current course?</label>
+            <input type="text" name="course" id="course" list="list1">
+            <datalist id="list1">
+                <option value="inft1206">INFT1206</option>
+                <option value="inf2100">INFT2100</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="">What do you want to do this weekend</label>
+            <select name="weekend" id="weekend">
+                <option value="coffee">Drink Coffee</option>
+                <option value="book">Read a book</option>
+                <option >Take a walk</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="web">How is the web development going so far?</label>
+            <br>
+            <textarea name="web" id="web" rows="10" cols="30">
+
+            </textarea>
+        </div>
+
+        <div>
+            what is your fav number?
+            <input type="number" min="0" max="10" step="2">
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
