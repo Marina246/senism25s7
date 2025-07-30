@@ -1,3 +1,11 @@
+/*
+Name: Marina Senis
+Student Number: 100774596
+File: main.js
+Date: July 30th, 2025
+Assignment 4 part 4 js file
+*/
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
