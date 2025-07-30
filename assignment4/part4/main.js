@@ -96,6 +96,37 @@ class Ball extends Shape
   }
 }
 
+// Created the evil circle class that extends to the shape class
+class EvilCircle extends Shape 
+{
+    // creating the constructor
+    constructor(x, y) 
+    {
+        super(x, y, 20, 20); // from class shape
+
+        this.color = "white"; // colour is white
+        this.size = 10; // size set to 10
+
+        // copied and pasted code into the constructor
+        window.addEventListener("keydown", (e) => {
+        switch (e.key) {
+            case "a":
+            this.x -= this.velX;
+            break;
+            case "d":
+            this.x += this.velX;
+            break;
+            case "w":
+            this.y -= this.velY;
+            break;
+            case "s":
+            this.y += this.velY;
+            break;
+        }
+        });
+    }
+}
+
 const balls = [];
 
 while (balls.length < 25) {
