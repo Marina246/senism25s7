@@ -25,7 +25,7 @@
       <h1 class="centered"><font size="7">Welcome to our wildlife website</font></h1>
     </div>
 
-    <nav>
+    <nav> <!--Wrapping it all in nav tag to tamper with the css as little as instructed-->
       <div class="nav">
         <ul>
           <li><a href="#">Home</a></li>
@@ -95,12 +95,12 @@
         Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.
         <br><br>
         </p>
-        <img src="media/wild-bear.jpg">
+        <img src="media/wild-bear.jpg" alt="Brown bear standing in woodland river">
         <p>
         Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.
         <br><br>
         </p>
-        <img src="media/urban-bear.jpg">
+        <img src="media/urban-bear.jpg" alt="Black and white image of a fenced in urban bear">
         <p>
         Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.
         <br><br>
@@ -113,11 +113,22 @@
         The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
         <br><br>
         </p>
+
         <audio controls>
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
-          <p>It looks like your browser doesn't support HTML5 audio players.</p>
+          <p>
+            Your browser does not support audio playback.
+            <a href="media/bear.mp3" download>Download the audio</a> or
+            <a href="#transcript">read the transcript</a>.
+          </p>
         </audio>
+
+        <!--transcript for the audio file -->
+        <details id="transcript">
+          <summary>Read the transcript</summary>
+          <p><strong>Evan Wild:</strong> "This isn't really an audio fact file about bears, but it is an audio file you can transcribe"</p>
+        </details>
 
         <aside>
 
