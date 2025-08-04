@@ -60,7 +60,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: rgb(255, 255, 255); /*Changed to White from*/
 }
 
 article, footer, .secondary {
@@ -255,4 +255,9 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+/*for centering elements*/
+.centered {
+  text-align: center;
 }
