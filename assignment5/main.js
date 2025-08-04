@@ -53,3 +53,14 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+// for adding show/hide comment control
+document.querySelector('.show-hide').addEventListener('keydown', function(e) 
+{
+  if (e.key === 'Enter' || e.key === ' ') 
+    {
+      e.preventDefault();
+      this.click(); // will click when "Enter" or the spacebar keys are pressed
+    }
+});
+
