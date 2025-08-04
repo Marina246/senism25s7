@@ -1,3 +1,11 @@
+/*
+Name: Marina Senis
+Student Number: 100774596
+File: main.js
+Date: Aug 4th, 2025
+Assignment 5 part 1 js file
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
