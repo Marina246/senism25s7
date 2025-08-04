@@ -34,8 +34,9 @@
           <li><a href="#">Blog</a></li>
         </ul>
 
-        <form class="search">
-          <input type="search" name="q" placeholder="Search query">
+        <form class="search" role="search">
+          <label for="search" class="screen-readers-only">Search this site</label>
+          <input type="search" name="q" id="search" placeholder="Search query">
           <input type="submit" value="Go!">
         </form>
       </div>
@@ -118,13 +119,13 @@
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
           <p>
-            Your browser does not support audio playback.
-            <a href="media/bear.mp3" download>Download the audio</a> or
-            <a href="#transcript">read the transcript</a>.
+            Your browser does not support audio playback for html5.
+            <a href="media/bear.mp3" download>Download the audio</a>
+            <a href="#transcript">read the transcript below</a>.
           </p>
         </audio>
 
-        <!--transcript for the audio file -->
+        <!--transcript for the audio file (id as transcript for ref tag above)-->
         <details id="transcript">
           <summary>Read the transcript</summary>
           <p><strong>Evan Wild:</strong> "This isn't really an audio fact file about bears, but it is an audio file you can transcribe"</p>
@@ -149,11 +150,11 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                <p>Your name:</p>
+                <label for="name">Your name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
-                <p>Your comment:</p>
+                <label for="comment">Your comment:</label>
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
